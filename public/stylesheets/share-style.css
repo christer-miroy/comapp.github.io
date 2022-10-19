@@ -1,0 +1,151 @@
+/* default styling for tabs */
+.navTab {
+    /* set borders */
+    border: 2px solid black;
+    background-color: #BFBFBF;
+}
+
+.navLink {
+    /* set font */
+    text-decoration: none;
+    color: black;
+}
+
+.navLink.active {
+    /* set active tab style */
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+/* set hover effect */
+.navTab:hover {
+    background-color: white;
+}
+
+.navLink:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* share.html stylesheet */
+/* (1) Upload Sharing */
+.uploadSharingTable {
+    /* set outside borders */
+    border: 2px solid black;
+    /* set text alignment */
+    text-align: center;
+    /* set veritcal alignment */
+    vertical-align:top;
+}
+
+.uploadSharingTable .trHead {
+    /* set background color */
+    background-color: #CCCCCC;
+}
+
+.uploadSharingTable .trHead .sharedUser, .uploadSharingTable tr td:first-child {
+    /* set right border */
+    border-right: 2px solid black;
+    /* set width */
+    width: 50vw;
+}
+
+.uploadSharingTable .trHead .action, .uploadSharingTable tr td:last-child {
+    /* set right border */
+    border-right: 2px solid black;
+    /* set width */
+    width: 50vw;
+}
+
+.uploadSharingTable tr:last-child {
+    /* set height of the last row */
+    height: 10vh;
+}
+
+/* (2) Add Sharing */
+.chooseUser {
+    /* set width */
+    width: 99vw;
+    /* set outline */
+    border: 2px solid black;
+    /* set height */
+    height: 150px;
+}
+
+.chooseUser .form {
+    /* set margin */
+    margin: 20px;
+}
+
+.chooseUser .form label, .chooseUser .form .btn {
+    /* set margin */
+    margin: 10px;
+}
+
+.chooseUser .form select {
+    /* set width */
+    width: 20vw;
+    /*set margin */
+    margin: 10px;
+}
+
+.chooseUser .form .btn {
+    /* set width */
+    width: 10vw;
+}
+
+.chooseUser .form .btn:hover {
+    /* set hover effect */
+    background-color: #20c997;
+    color: black;
+}
+
+/* share.html remove modal */
+.removeModal .modal-dialog {
+    /* general style */
+    font-size: small;
+
+}
+
+.removeModal .modal-dialog .modal-content {
+    /* set border */
+    border: 2px solid black;
+}
+
+.removeModal .modal-dialog .modal-content .modal-header {
+    /* set bottom border */
+    border-bottom: 2px solid black;
+}
+
+.removeModal .modal-dialog .modal-content .modal-header .btn-close {
+    /* set border */
+    border: 2px solid black;
+}
+
+.removeModal .modal-dialog .modal-content .modal-footer {
+    /* align buttons to the center */
+    justify-content: center;
+}
+
+.removeModal .modal-dialog .modal-content .modal-footer .okayBtn {
+    /* set border */
+    border: 2px solid #0000FF;
+}
+
+.removeModal .modal-dialog .modal-content .modal-footer .cancelBtn {
+    /* set border */
+    border: 2px solid black;
+}
+
+.removeModal .modal-dialog .modal-content .modal-footer .okayBtn:hover {
+    /* create hover effects */
+    background-color: #0000FF;
+    border: 2px solid #0000FF;
+}
+
+.removeModal .modal-dialog .modal-content .modal-footer .cancelBtn:hover {
+    /* create hover effects */
+    background-color: #DC3545;
+    border: 2px solid #DC3545;
+}

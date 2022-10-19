@@ -1,0 +1,112 @@
+/* default styling for tabs */
+.navTab {
+    /* set borders */
+    border: 2px solid black;
+    background-color: #BFBFBF;
+}
+
+.navLink {
+    /* set font */
+    text-decoration: none;
+    color: black;
+}
+
+.navLink.active {
+    /* set active tab style */
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+/* set hover effect */
+.navTab:hover {
+    background-color: white;
+}
+
+.navLink:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* user-list.html stylesheet */
+.users {
+    /* set border */
+    border: 2px solid black;
+    /* align text to top */
+    vertical-align: top;
+}
+
+.tr {
+    background-color: #CCCCCC;
+}
+
+.colName, tr td:first-child {
+    /* set border */
+    border-right: 2px solid black;
+    /* set width */
+    width: 40vw;
+}
+
+.colEmail, tr td:nth-child(2) {
+    /* set border */
+    border-right: 2px solid black;
+    /* set width */
+    width: 40vw;
+    /* text align */
+    text-align: center;
+}
+
+.colAction {
+    /* set  width */
+    width: 20vw;
+}
+
+tr td:nth-child(3), tr td:last-child {
+    /* set width */
+    width: 10vw;
+    /* text align */
+    text-align: center;
+}
+
+/* delete modal stylesheet */
+.modal-content {
+    /* set border */
+    border: 2px solid black;
+}
+
+.modal-header {
+    /* set bottom border */
+    border-bottom: 2px solid black;
+}
+
+.modal-header .modal-title {
+    /* set font weight */
+    font-weight: bold;
+}
+
+.modal-header .btn-close {
+    /* set border */
+    border: 2px solid black;
+}
+
+.modal-footer .okayBtn {
+    /* set border */
+    border: 2px solid #2929FF;
+}
+
+.modal-footer .okayBtn:hover {
+    /* hover effect */
+    background-color: #2929FF;
+    text-decoration: underline;
+}
+
+.modal-footer .cancelBtn {
+    /* set border */
+    border: 2px solid #DC3545;
+}
+
+.modal-footer .cancelBtn:hover {
+    /* hover effect */
+    background-color: #DC3545;
+    text-decoration: underline;
+}

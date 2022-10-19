@@ -1,0 +1,23 @@
+/* default styling for tabs */
+.navTab {
+    /* set borders */
+    border: 2px solid black;
+    background-color: #BFBFBF;
+}
+
+.navLink {
+    /* set font */
+    text-decoration: none;
+    color: black;
+    background-color: #BFBFBF;
+}
+
+/* set hover effect */
+.navTab:hover {
+    background-color: white;
+}
+
+.navLink:hover {
+    color: black;
+    text-decoration: underline;
+}

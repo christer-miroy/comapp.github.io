@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communications Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/share-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="tabsContainer m-2">
+        <!-- Tabs -->
+    <div class="navbar">
+        <div class="navTab col-3">
+          <a href="#" class="navLink  d-flex justify-content-center" id="chat">Group Chat</a>
+        </div>
+        <div class="navTab col-3">
+          <a href="#" class="navLink d-flex justify-content-center" id="user-list">Manage
+            Users</a>
+        </div>
+        <div class="navTab col-3">
+          <a href="#" aria-current="page" class="navLink active d-flex justify-content-center" id="docs-list">Manage Documents</a>
+        </div>
+        <div class="navTab col-3">
+          <a href="#" class="navLink d-flex justify-content-center" id="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+    <!-- Upload Sharing Content -->
+    <div class="uploadSharingContainer m-2">
+        <!-- heading -->
+        <div class="d-flex justify-content-start mt-4">
+            <input hidden id="uploadId" value="<%= share._id %>">
+            <h3><b>Upload Sharing: </b><label id="spanFileLabel" name="spanFileLabel"><%= share.fileName%></label></h3>
+        </div>
+        <!-- Upload Sharing Table -->
+        <table class="uploadSharingTable" id="uploadSharingTable">
+            <thead>
+                <tr class="trHead">
+                    <th class="sharedUser">Shared User</th>
+                    <th class="action">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% usershared.forEach(user=> { %>
+                    <tr>
+                        <td>
+                            <%= user.fullName %>
+                        </td>
+                        <td>
+                            <a class="delete" id="<%=user._id%>" href="#" data-bs-target="#deleteModal" data-bs-toggle="modal">Remove</a>
+                        </td>
+                    </tr>
+
+                    <%})%>
+            </tbody>
+        </table>
+    </div>
+    <!-- Add Sharing Content -->
+    <div class="addSharingContainer m-2">
+        <!-- heading -->
+        <div class="d-flex justify-content-start m-4">
+            <h3><b>Add Sharing</b></h3>
+        </div>
+        <!-- Choose User -->
+        <div class="chooseUser mt-4">
+            <form class="form" id="shareForm">
+                <label for="user"><b>Choose User : </b></label>
+                <select name="users" id="sharedUsers">
+                   <% users.forEach(d => { %>
+                    <option value="<%= d._id %>"><%= d.fullName %></option>
+                   <% }) %>
+                </select>
+                <button type="submit" class="btn btn-secondary btn-sm" id="addShareBtn" name="addShareBtn">Add Share</button>
+            </form>
+        </div>
+    </div>
+    <!-- Remove Modal -->
+    <div class="modal" id="removeModal" tabindex="-1" aria-labelledby="removeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h5 class="modal-title w-100" id="removeModalLabel">Confirm from Web Page
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure?
+            </div>
+            <div class="modal-footer">
+                <form id="deleteForm">
+                    <button type="submit" class="okayRemoveBtn btn btn btn-outline-secondary btn-sm"
+                    data-bs-dismiss="modal" id="okayRemoveBtn" name="okayRemoveBtn">Okay</button>
+                </form>
+                <button type="button" class="cancelRemoveBtn btn btn btn-outline-secondary btn-sm"
+                    data-bs-dismiss="modal" id="cancelRemoveBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/javascripts/remove-shared-user.js"></script>
+<script type="text/javascript" src="/javascripts/nav.js"></script>
+<script type="text/javascript" src="/javascripts/share-docs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

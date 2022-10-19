@@ -1,0 +1,259 @@
+/* default styling for tabs */
+.navTab {
+    /* set borders */
+    border: 2px solid black;
+    background-color: #BFBFBF;
+}
+
+.navLink {
+    /* set font */
+    text-decoration: none;
+    color: black;
+}
+
+.navLink.active {
+    /* set active tab style */
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+/* set hover effect */
+.navTab:hover {
+    background-color: white;
+}
+
+.navLink:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* docs-list.html stylesheet */
+/* (1) My Uploads Table */
+.myUploadsTable {
+    /* set outside border except bottom */
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    /* set vertical text alignment */
+    vertical-align: top;
+}
+
+.myUploadsTable tr:last-child {
+    /* set bottom border */
+    border-bottom: 2px solid black;
+}
+
+.myUploadsTable .tr {
+    /* set border color */
+    background-color: #CCCCCC;
+}
+
+.fileName, .myUploadsTable form td:nth-child(2) {
+    /* set left and right borders */
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    /* set text alignment */
+    text-align: center;
+}
+
+.label, .myUploadsTable td:first-child, .fileName, .myUploadsTable td:nth-child(2) {
+    /* set width of columns 1 and 2 */
+    width: 35vw;
+}
+
+.myUploadsTable td:first-child {
+    /* set text alignment */
+    text-align: start;
+}
+
+.action {
+    /* set column width */
+    width: 30vw;
+    /* set text alignment */
+    text-align: center;
+}
+
+.myUploadsTable td:nth-child(3), .myUploadsTable td:nth-child(4), .myUploadsTable td:last-child {
+    /* set column width */
+    width: 10vw;
+    /* set text alignment */
+    text-align: center;
+}
+
+/* (2) Shared Uploads Table */
+.sharedUploadsTable {
+    /* set outside border except bottom */
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    /* set vertical text alignment */
+    vertical-align: top;
+}
+
+.sharedLabel, .sharedUploadsTable tr:last-child {
+    /* set bottom border */
+    border-bottom: 2px solid black;
+}
+
+.sharedUploadsTable  .thead {
+    /* set border color */
+    background-color: #CCCCCC;
+}
+
+.sharedUploadsTable  .sharedFileName, tr td:nth-child(2) {
+    /* set left and right borders */
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    /* set text alignment */
+    text-align: center;
+}
+
+.sharedUploadsTable  .sharedBy, tr td:nth-child(3) {
+    /* set text alignment */
+    text-align: center;
+}
+
+.sharedUploadsTable .sharedLabel, td:first-child, .sharedUploadsTable .sharedFileName, td:nth-child(2){
+    /* set width of columns 1 and 2 */
+    width: 40vw;
+}
+
+.sharedUploadsTable .sharedBy, .sharedUploadsTable td:last-child {
+    /* set width of column 3 */
+    width: 20vw;
+}
+
+/* Add Upload Modal */
+.addUploadModal .modal-content {
+    /* set border */
+    border: 2px solid black;
+}
+
+.addUploadModal .modal-content .modal-header {
+    /* set bottom border */
+    border-bottom: 2px solid black;
+}
+
+.addUploadModal .modal-content .modal-header .closeBtn {
+    /* set border */
+    border: 2px solid black;
+}
+
+.addUploadModal .modal-content .modal-footer {
+    /* align buttons to the left */
+    justify-content: flex-start;
+}
+
+.addUploadModal .modal-content .modal-body .chooseFileBtn{
+    /* set hover effect */
+    border-color: #0D6EFD;
+    color: black;
+}
+
+.addUploadModal .modal-content .modal-footer .uploadBtn:hover {
+    /* set hover effect */
+    background-color: #20c997;
+    border-color: #20c997;
+    color: black;
+}
+
+.addUploadModal .modal-content .modal-footer .cancelBtn:hover {
+    /* set hover effect */
+    background-color: #DC3545;
+    border-color: #DC3545;
+    color: black;
+}
+
+/* Edit Modal */
+.editModal .modal-dialog .modal-content {
+    /* set border */
+    border: 2px solid black;
+}
+
+.editModal .modal-dialog .modal-content .modal-header {
+    /* set bottom border */
+    border-bottom: 2px solid black;
+}
+
+.editModal .modal-dialog .modal-content .modal-header .closeBtn {
+    /* set border */
+    border: 2px solid black;
+}
+
+.editModal .modal-dialog .modal-content .modal-body .fileDescriptionText {
+    /* set width of the text field */
+    width: 20vw;
+    /* set border color */
+    border: 2px solid black;
+}
+
+.editModal .modal-dialog .modal-content .modal-body .fileDescriptionLabel {
+    /* set font weight */
+    font-weight: bold;
+}
+
+.editModal .modal-dialog .modal-content .modal-footer .saveBtn:hover {
+    /* set hover effect */
+    background-color: #20c997;
+    border-color: #20c997;
+    color: black;
+}
+
+.editModal .modal-dialog .modal-content .modal-footer .cancelBtn:hover {
+    /* set hover effect */
+    background-color: #DC3545;
+    border-color: #DC3545;
+    color: black;
+}
+
+/* Delete Modal Stylesheet */
+.deleteModal .modal-dialog .modal-content {
+    /* set border */
+    border: 2px solid black;
+}
+
+.deleteModal .modal-dialog .modal-content .modal-header {
+    /* set bottom border */
+    border-bottom: 2px solid black;
+}
+
+.deleteModal .modal-dialog .modal-content .modal-header .closeBtn {
+    /* set border */
+    border: 2px solid black;
+}
+
+.deleteModal .modal-dialog .modal-content .modal-body {
+    /* set alignment */
+    text-align: center;
+}
+
+.deleteModal .modal-dialog .modal-content .modal-footer {
+    /* set alignment */
+    display: flex;
+    justify-content: center;
+}
+
+.deleteModal .modal-dialog .modal-content .modal-footer .okayBtn {
+    /* set style */
+    border: 2px solid #0D6EFD;
+}
+
+.deleteModal .modal-dialog .modal-content .modal-footer .okayBtn:hover {
+    /* set hover */
+    border: 2px solid #0D6EFD;
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.deleteModal .modal-dialog .modal-content .modal-footer .cancelBtn {
+    /* set style */
+    border: 2px solid #DC3545;
+}
+
+.deleteModal .modal-dialog .modal-content .modal-footer .cancelBtn:hover {
+    /* set hover */
+    border: 2px solid #DC3545;
+    background-color: #DC3545;
+    color: black;
+}

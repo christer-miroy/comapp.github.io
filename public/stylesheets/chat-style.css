@@ -1,0 +1,80 @@
+/* default styling for tabs */
+.navTab {
+    /* set borders */
+    border: 2px solid black;
+    background-color: #BFBFBF;
+}
+
+.navLink {
+    /* set font */
+    text-decoration: none;
+    color: black;
+}
+
+.navLink.active {
+    /* set active tab style */
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+/* set hover effect */
+.navTab:hover {
+    background-color: white;
+}
+
+.navLink:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* chatbox stylesheet */
+.chat  {
+    border-style: solid;
+    border-color: black;
+}
+
+.chatTitle, .chatHead .btn-close {
+    display: flex;
+    justify-content: center;
+}
+
+.chatTitle {
+    /* set text to bold */
+    font-weight: bold;
+}
+
+.chatHead .btn-close {
+    /* set border */
+    border: 2px solid black;
+}
+
+.chatMain {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: black;
+    border-bottom-color: black;
+    height: 300px;
+    font-size: larger;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sender{
+    font-weight: bold;
+    font-size: small;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.message .form-control {
+    border-style: solid;
+    border-color: black;
+    font-size: small;
+}
+
+.buttons .btn {
+    font-weight: bold;
+}

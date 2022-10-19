@@ -1,0 +1,11 @@
+.card {
+    /* remove border */
+    border: none ;
+}
+
+.btn {
+    /* set style */
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 20vw;
+}

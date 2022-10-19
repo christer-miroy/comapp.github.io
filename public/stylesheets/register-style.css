@@ -1,0 +1,15 @@
+.form-label {
+    /* set width of the labels */
+    width: 20vw;
+    /* set alignment of the labels */
+    text-align: center;
+}
+
+.form-control {
+    /* set width */
+    width: 20vw;
+    /* set outline */
+    border: 2px solid black;
+    /* set alignment */
+    justify-content: flex-start;
+}

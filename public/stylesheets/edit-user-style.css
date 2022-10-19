@@ -1,0 +1,99 @@
+/* default styling for tabs */
+.navTab {
+    /* set borders */
+    border: 2px solid black;
+    background-color: #BFBFBF;
+}
+
+.navLink {
+    /* set font */
+    text-decoration: none;
+    color: black;
+}
+
+.navLink.active {
+    /* set active tab style */
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+/* set hover effect */
+.navTab:hover {
+    background-color: white;
+}
+
+.navLink:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* user-list.html stylesheet */
+.userTable {
+    /* set font size */
+    font-size: medium;
+}
+
+.userTable thead {
+    /* top border */
+    border-top: 2px solid black;
+    /* background color */
+    background-color: #CCCCCC;
+}
+
+.userTable thead tr .colName, .userTable tbody tr .colName {
+    /* left border */
+    border-left: 2px solid black;
+    /* set column width */
+    width: 40vw;
+}
+
+.userTable tbody tr:last-child {
+    /* bottom border */
+    border-bottom: 2px solid black;
+    /* set height for the last row */
+    height: 100px;
+    /* align text to top */
+    vertical-align: top;
+}
+
+.userTable thead tr .colAction, .userTable tbody tr .colAction {
+    /* right border */
+    border-right: 2px solid black;
+    /* set text alignment to center */
+    text-align: center;
+    /* set column width */
+    width: 20vw;
+}
+
+/* edit-user.html stylesheet */
+.form-label {
+    /* set width of the labels */
+    width: 20vw;
+    /* set alignment of the labels */
+    text-align: left;
+}
+
+.form-control {
+    /* set width */
+    width: 20vw;
+    /* set outline */
+    border: 2px solid black;
+    /* set alignment */
+    justify-content: flex-start;
+}
+
+.btn {
+    /* set style */
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 5vw;
+    background-color: #66FFFF;
+    font-weight: bold;
+}
+
+.btn:hover {
+    /* set hover effect */
+    color: #66FFFF;
+    background-color: black;
+}

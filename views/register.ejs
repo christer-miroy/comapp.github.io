@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Communications Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/register-style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Register -->
+        <div class="d-flex justify-content-center m-5">
+            <h2>Register</h2>
+        </div>
+        <form action="/register" method="post" id="registerForm">
+            <!-- full name -->
+            <div class="mb-3 d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-5">
+                        <label  for="fullName" class="form-label">Full Name</label>
+                    </div>
+                    <div class="col-7">
+                        <input name="fullName" type="text" class="form-control" id="fullName" placeholder="Full Name">
+                    </div>
+                </div>
+            </div>
+            <!-- email -->
+            <div class="mb-3 d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-5">
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="col-7">
+                        <input name="email" type="text" class="form-control" id="email" placeholder="sample@email.com">
+                    </div>
+                </div>
+            </div>
+            <!-- password -->
+            <div class="mb-3 d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-5">
+                        <label for="password" class="form-label">Password</label>
+                    </div>
+                    <div class="col-7">
+                        <input name="password" type="password" class="form-control" id="password"  placeholder="******">
+                    </div>
+                </div>
+            </div>
+            <!-- confirm password -->
+            <div class="mb-3 d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-5">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    </div>
+                    <div class="col-7">
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="******">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+                <button type="submit" id="registerBtn" class="registerSuccess btn btn-outline-dark btn-sm">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="/javascripts/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
