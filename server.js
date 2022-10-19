@@ -47,6 +47,7 @@ const JWT_SECRET = process.env.jwt;
 const MONGODB_URL = process.env.mongodb;
 const salt = 10;
 //original .env mongodb connection is mongodb://localhost:27017/project
+//mongodb website connection: mongodb+srv://comm-app:xGkWGSCk0Gwvqhww@cluster0.bndpvz7.mongodb.net/?retryWrites=true&w=majority
 
 http.listen(port, () => {
     console.log(`Running on port ${port}`);
