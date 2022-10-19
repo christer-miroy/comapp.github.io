@@ -46,6 +46,7 @@ app.use('/logout', logoutRouter);
 const JWT_SECRET = process.env.jwt;
 const MONGODB_URL = process.env.mongodb;
 const salt = 10;
+//original .env mongodb connection is mongodb://localhost:27017/project
 
 http.listen(port, () => {
     console.log(`Running on port ${port}`);
